@@ -1,267 +1,129 @@
-# 🔐 Advanced Encryption Tool
-
-## 📌 Project Overview
-
-The **Advanced Encryption Tool** is a cybersecurity application developed using Python that enables users to securely encrypt and decrypt sensitive data using modern cryptographic algorithms. The tool provides a user-friendly interface for protecting text, files, and confidential information against unauthorized access.
-
-The system implements strong encryption techniques such as AES, Fernet, RSA, and SHA-256 hashing to ensure data confidentiality, integrity, and security.
-
----
-
-## 🎯 Objectives
-
-* Protect sensitive information from unauthorized access.
-* Provide secure encryption and decryption mechanisms.
-* Support multiple encryption algorithms.
-* Ensure data integrity through hashing.
-* Offer an easy-to-use graphical interface.
-* Demonstrate practical cryptography concepts.
-
----
-
-## ✨ Features
-
-### 🔒 Text Encryption
-
-* Encrypt plain text instantly.
-* Decrypt encrypted text securely.
-
-### 📂 File Encryption
-
-* Encrypt files before storage or sharing.
-* Decrypt files only with authorized keys.
-
-### 🔑 Key Management
-
-* Generate secure encryption keys.
-* Store keys securely.
-* Import existing keys.
-
-### 🛡️ Hash Generation
-
-* SHA-256 Hashing
-* MD5 Hashing
-* File Integrity Verification
-
-### 🔐 Multiple Encryption Algorithms
-
-* AES Encryption
-* Fernet Encryption
-* RSA Encryption
-* SHA-256 Hashing
-
-### 📊 Activity Monitoring
-
-* Encryption logs
-* Decryption logs
-* Timestamp records
-
----
-
-## 🏗️ System Architecture
-
-```text
-User
- │
- ▼
-Graphical User Interface
- │
- ▼
-Encryption Engine
- │
- ├── AES Module
- ├── RSA Module
- ├── Fernet Module
- └── Hashing Module
- │
- ▼
-Encrypted Output
-```
-
----
-
-## 🔒 Security Features
-
-### AES Encryption
-
-Advanced Encryption Standard (AES) is used for high-speed symmetric encryption.
-
-### RSA Encryption
-
-Public-Key Cryptography is used for secure key exchange.
-
-### Fernet Encryption
-
-Provides authenticated encryption and prevents data tampering.
-
-### SHA-256 Hashing
-
-Ensures data integrity and password protection.
-
-### Secure Key Generation
-
-```python
-from cryptography.fernet import Fernet
-
-key = Fernet.generate_key()
-```
-
-### Encryption Example
-
-```python
-from cryptography.fernet import Fernet
-
-cipher = Fernet(key)
-
-encrypted = cipher.encrypt(
-message.encode()
-)
-```
-
-### Decryption Example
-
-```python
-decrypted = cipher.decrypt(
-encrypted
-).decode()
-```
-
----
-
-## 💻 Technologies Used
-
-### Frontend
-
-* Streamlit
-* HTML
-* CSS
-
-### Backend
-
-* Python
-
-### Libraries
-
-* cryptography
-* hashlib
-* base64
-* secrets
-* os
-
----
-
-## 📂 Project Structure
-
-```text
-Advanced_Encryption_Tool/
-│
-├── app.py
-├── encryption.py
-├── decryption.py
-├── key_manager.py
-├── hashing.py
-│
-├── encrypted_files/
-├── decrypted_files/
-├── keys/
-│
-├── requirements.txt
-└── README.md
-```
-
----
-
-## ⚙️ Installation
-
-### Clone Repository
-
-```bash
-git clone https://github.com/yourusername/advanced-encryption-tool.git
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run Application
-
-```bash
-streamlit run app.py
-```
-
----
-
-## 📦 Required Packages
-
-```text
-streamlit
-cryptography
-hashlib
-base64
-pandas
-Pillow
-```
-
----
-
-## 🔄 Workflow
-
-```text
-User Input
-    ↓
-Select Algorithm
-    ↓
-Generate Key
-    ↓
-Encrypt Data
-    ↓
-Store Securely
-    ↓
-Decrypt When Needed
-```
-
----
-
-## 📈 Applications
-
-* Secure File Storage
-* Password Protection
-* Secure Data Transfer
-* Academic Cryptography Projects
-* Cybersecurity Demonstrations
-* Confidential Document Protection
-
----
-
-## 🚀 Future Enhancements
-
-* AES-256 Support
-* Multi-Factor Authentication
-* Cloud Key Vault Integration
-* QR-Based Key Sharing
-* Biometric Authentication
-* Blockchain-Based Key Management
-
----
-
-## 👨‍💻 Developer
-
-**Sai Krishna**
-
-B.Tech – Computer Science and Engineering (Data Science)
-
-Project Title:
-
-**Advanced Encryption Tool Using AES, RSA, Fernet, and SHA-256 Cryptographic Algorithms**
-
----
-
-## 📜 License
-
-This project is developed for educational, research, and cybersecurity learning purposes.
-
----
-
-One note: if this is for a **final-year or resume project**, an "Advanced Encryption Tool" by itself is often considered a small project. Adding **file encryption, password manager, secure key vault, digital signatures, and ransomware detection** would make it much stronger for software or cybersecurity job applications.
+Advanced Encryption Tool
+📌 Overview
+
+Advanced Encryption Tool is a secure file protection and sharing platform developed to provide enterprise-grade encryption for documents, images, videos, and other digital assets.
+
+The system combines AES-256 encryption, OTP-based authentication, secure file sharing, and bulk encryption capabilities into a single user-friendly web application.
+
+This project was designed to demonstrate practical implementation of cybersecurity concepts, secure authentication, cryptography, and modern web application development.
+
+🚀 Key Features
+🔒 Secure File Encryption
+AES-256 encryption algorithm
+Password-protected encryption
+Support for multiple file formats
+Strong cryptographic security
+🔓 Secure Decryption
+Password-based decryption
+Integrity verification
+Secure file recovery
+📧 OTP Authentication
+Email OTP verification
+User registration and login security
+Multi-layer authentication
+📁 Bulk Encryption
+Encrypt multiple files simultaneously
+Time-saving batch processing
+Secure handling of large datasets
+🔗 Secure File Sharing
+Public and private sharing links
+Link expiration settings
+Download limits
+Optional PIN protection
+📊 Activity Dashboard
+Encryption statistics
+File history tracking
+User activity monitoring
+Storage analytics
+🛡 Security Enhancements
+AES-256 Encryption
+PBKDF2 Key Derivation
+OTP Verification
+Access Control
+Session Management
+🏗 System Architecture
+User Interface
+      │
+      ▼
+Authentication Module
+(Login + OTP Verification)
+      │
+      ▼
+Encryption Module
+(AES-256 Encryption)
+      │
+      ▼
+Storage Layer
+(SQLite Database)
+      │
+      ▼
+Sharing Module
+(Link Generation & Expiry)
+🖥 Technology Stack
+Frontend
+HTML5
+CSS3
+JavaScript
+Tailwind CSS
+Backend
+Python
+Flask
+Database
+SQLite
+Security
+AES-256 Encryption
+PBKDF2
+OTP Verification
+Deployment
+GitHub
+Render / Railway / VPS
+📸 Project Screenshots
+Login System
+Secure user authentication
+Password protection
+OTP verification
+Encryption Dashboard
+File encryption interface
+File type selection
+Password protection
+Secure Sharing
+Expiry-based links
+Download control
+PIN-protected access
+Activity Dashboard
+User statistics
+Encryption history
+File tracking
+🎯 Learning Outcomes
+
+This project helped in understanding:
+
+Cryptography Fundamentals
+AES Encryption Implementation
+Secure Authentication Systems
+OTP Verification Workflow
+File Handling in Python
+Secure Web Application Design
+Database Management
+User Access Control
+📈 Future Enhancements
+Cloud Storage Integration
+Blockchain Audit Logs
+Role-Based Access Control
+Mobile Application Support
+End-to-End Encryption
+AI-Based Threat Detection
+👨‍💻 Developer
+
+Kasbe Sai
+
+📧 Email: saisunilkasbe@gmail.com
+
+💼 LinkedIn: linkedin.com/in/kasbe-sai
+
+🐙 GitHub: github.com/Sai-kasbe
+
+⭐ Resume Project Description (Short Version)
+
+Advanced Encryption Tool
+Developed a secure web-based file encryption and sharing platform using Python, Flask, SQLite, and AES-256 encryption. Implemented OTP-based authentication, bulk file encryption, secure sharing links with expiry controls, and activity tracking dashboard to enhance data security and user management.
