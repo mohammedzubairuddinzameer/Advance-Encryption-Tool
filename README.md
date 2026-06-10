@@ -122,7 +122,8 @@ Sharing Module
 
 
 ### OTP Verification
-<img src="screenshots/otp_verification.png" width="800">
+<img width="618" height="468" alt="image" src="https://github.com/user-attachments/assets/b12b8215-e068-4928-9a7e-3a9720878d71" />
+
 
 ### Secure File Sharing
 <img src="screenshots/file_sharing.png" width="800">
