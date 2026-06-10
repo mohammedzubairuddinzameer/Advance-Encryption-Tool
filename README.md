@@ -130,7 +130,8 @@ Sharing Module
 
 
 ### Activity Dashboard
-<img src="screenshots/dashboard.png" width="800">
+<img width="1999" height="1545" alt="image" src="https://github.com/user-attachments/assets/026cc777-34ec-4fc7-9690-b039ef075e39" />
+
 
 ---
 
