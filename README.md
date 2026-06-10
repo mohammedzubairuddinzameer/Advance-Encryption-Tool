@@ -118,6 +118,7 @@ Sharing Module
 
 
 ### Encryption Dashboard
+<img width="1999" height="1545" alt="image" src="https://github.com/user-attachments/assets/4c0c83a9-3412-4bb2-95fe-fac4db49e875" />
 
 
 ### OTP Verification
