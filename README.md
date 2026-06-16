@@ -171,11 +171,11 @@ Developed a secure web-based file encryption and sharing platform using Python, 
 
 ### Kasbe Sai
 
-📧 Email: saisunilkasbe@gmail.com
+📧 Email: mohammedzubairuddinzameer@gmail.com
 
-💼 LinkedIn: https://linkedin.com/in/kasbe-sai
+💼 LinkedIn: https://linkedin.com/in/mohammed-zubair-uddin-zameer-70912b292/
 
-🐙 GitHub: https://github.com/Sai-kasbe
+🐙 GitHub: https://github.com/mohammedzubairuddinzameer
 
 ---
 
